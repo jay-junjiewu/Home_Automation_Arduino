@@ -16,5 +16,17 @@
 #define MINPRESSURE 10
 #define MAXPRESSURE 1000
 
+// Different Pages that the LCD can be on
+enum pages {
+	autonomous,
+	menu,
+	custom_lights,
+	custom_blinds,
+	custom_sprinkler,
+	custom_alarm
+};
+
+extern int page;
+
 extern LCDWIKI_KBV my_lcd;
 extern TouchScreen ts;
